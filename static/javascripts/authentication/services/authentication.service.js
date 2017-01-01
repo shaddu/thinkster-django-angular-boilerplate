@@ -56,7 +56,7 @@
          * @desc Log the new user in
          */
         function registerSuccessFn(data, status, headers, config) {
-            Authentication.login(email, password);
+            Authentication.login(data.data.email, data.data.password);
         }
 
         /**
